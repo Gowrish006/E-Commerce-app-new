@@ -1,45 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>ShopEase</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gowrish E-Commerce</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>ShopEase</h1>
-        <input type="text" placeholder="Search products...">
-    </header>
+<!-- NAVBAR -->
+<header>
+  <nav class="navbar">
+    <h2 class="logo">Gowrish Store</h2>
 
-    <section class="products">
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
-        <div class="card">
-            <img src="https://via.placeholder.com/150">
-            <h3>Wireless Headphones</h3>
-            <p>$59.99</p>
-            <button onclick="addToCart()">Add to Cart</button>
-        </div>
+    <button id="themeToggle">🌙</button>
+  </nav>
+</header>
 
-        <div class="card">
-            <img src="https://via.placeholder.com/150">
-            <h3>Smart Watch</h3>
-            <p>$89.99</p>
-            <button onclick="addToCart()">Add to Cart</button>
-        </div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Welcome to Gowrish E-Commerce</h1>
+    <p>Smart shopping powered by Cloud, Docker & Kubernetes.</p>
+    <button onclick="scrollToProducts()">Explore Products</button>
+  </div>
+</section>
 
-        <div class="card">
-            <img src="https://via.placeholder.com/150">
-            <h3>Gaming Mouse</h3>
-            <p>$29.99</p>
-            <button onclick="addToCart()">Add to Cart</button>
-        </div>
+<!-- FEATURES -->
+<section id="features" class="section">
+  <h2>Why Choose Us?</h2>
 
-    </section>
+  <div class="cards">
+    <div class="card">
+      <h3>⚡ Fast Delivery</h3>
+      <p>Optimized performance with modern cloud deployment.</p>
+    </div>
 
-    <footer>
-        <p>© 2026 ShopEase | Secure Online Shopping</p>
-    </footer>
+    <div class="card">
+      <h3>🔒 Secure Payments</h3>
+      <p>Enterprise-level security and reliability.</p>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="card">
+      <h3>🌍 Global Access</h3>
+      <p>Shop anytime from anywhere in the world.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="section">
+  <h2>Popular Products</h2>
+
+  <div class="cards">
+    <div class="card product">
+      <h3>Smart Watch</h3>
+      <p>$199</p>
+      <button onclick="buy()">Buy Now</button>
+    </div>
+
+    <div class="card product">
+      <h3>Wireless Headphones</h3>
+      <p>$149</p>
+      <button onclick="buy()">Buy Now</button>
+    </div>
+
+    <div class="card product">
+      <h3>Gaming Mouse</h3>
+      <p>$79</p>
+      <button onclick="buy()">Buy Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <h2>Contact</h2>
+  <p>Email: gowrish@ecommerce.com</p>
+</section>
+
+<footer>
+  <p>© 2026 Gowrish E-Commerce | Built with ❤️</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
